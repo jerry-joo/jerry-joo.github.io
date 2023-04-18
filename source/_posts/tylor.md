@@ -1,7 +1,11 @@
 ---
-title: Tylor series
+title: 泰勒级数
+mathjax: true
+categories: 高等数学
+tags: 公式
 ---
-
+一些常用的公式
+<!--more-->
 $e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}$
 
 $\sin(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!}$
