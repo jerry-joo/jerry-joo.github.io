@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="泰勒级数, zzy的BLOG">
+    <meta name="keywords" content="泰勒, zzy的BLOG">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>泰勒级数 | zzy的BLOG</title>
+    <title>泰勒 | zzy的BLOG</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -266,12 +266,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">泰勒级数</h1>
+                    <h1 class="description center-align post-title">泰勒</h1>
                 </div>
             </div>
         </div>
@@ -419,7 +419,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-04-18
+                    2023-04-28
                 </div>
                 
 
@@ -444,7 +444,22 @@
 <p>$\ln(1+x) = \sum_{n=1}^{\infty} \frac{(-1)^{n-1} x^n}{n}$</p>
 <p>$\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n$</p>
 <p>$\arctan(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1}$</p>
-
+<p>泰勒展开</p>
+<p>在x-&gt; 0处</p>
+<p>$\sin(x) = x - \frac{x^3}{6} + \frac{x^5}{120} +o(x^5)$</p>
+<p>$\cos(x) = 1 - \frac{x^2}{2} + \frac{x^4}{24} +o(x^4)$</p>
+<p>$\ln(1+x) = x - \frac{x^2}{2} +\frac{x^3}{3} +o(x^3)$</p>
+<p>$e^x = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + o(x^3)$</p>
+<p>$(1+x)^{\frac{1}{x}} = e^\frac{\ln(1+x)}{x}$<br>$= e*[1 + (-\frac{x}{2}+\frac{x^2}{3}+o(x^2))+ \frac{(-\frac{x}{2}+\frac{x^2}{3}+o(x^2))^2}{2}+o(-\frac{x}{2}+\frac{x^2}{3}+o(x^2))]$ </p>
+<p>推导过程</p>
+<p><font color =red>注意各泰勒公式的活用 </font></p>
+<script type="math/tex; mode=display">
+\begin{align}
+(1+x)^{\frac{1}{x}} = e^\frac{\ln(1+x)}{x}
+& = e^\frac{x - \frac{x^2}{2} +\frac{x^3}{3} +o(x^3)}{x}= e^{1-\frac{x}{2}+\frac{x^2}{3}+o(x^2)}\\
+& = e*e^{-\frac{x}{2}+\frac{x^2}{3}+o(x^2)}\\
+&= e*[1 + (-\frac{x}{2}+\frac{x^2}{3}+o(x^2))+ \frac{(-\frac{x}{2}+\frac{x^2}{3}+o(x^2))^2}{2}+o(-\frac{x}{2}+\frac{x^2}{3}+o(x^2))]\\
+\end{align}</script>
                 
             </div>
             <hr/>
@@ -564,9 +579,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="泰勒级数">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="泰勒">
                         
-                        <span class="card-title">泰勒级数</span>
+                        <span class="card-title">泰勒</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -614,9 +629,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="泰勒级数">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="泰勒">
                         
-                        <span class="card-title">泰勒级数</span>
+                        <span class="card-title">泰勒</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
