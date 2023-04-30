@@ -35,11 +35,12 @@ $(1+x)^{\frac{1}{x}} = e^\frac{\ln(1+x)}{x}$
 $= e*[1 + (-\frac{x}{2}+\frac{x^2}{3}+o(x^2))+ \frac{(-\frac{x}{2}+\frac{x^2}{3}+o(x^2))^2}{2}+o(-\frac{x}{2}+\frac{x^2}{3}+o(x^2))]$ 
 
 推导过程
+<font color =red>注意各泰勒公式的活用 </font>
 $$
 \begin{align}
 (1+x)^{\frac{1}{x}} = e^\frac{\ln(1+x)}{x}
 & = e^\frac{x - \frac{x^2}{2} +\frac{x^3}{3} +o(x^3)}{x}= e^{1-\frac{x}{2}+\frac{x^2}{3}+o(x^2)}\\
 & = e*e^{-\frac{x}{2}+\frac{x^2}{3}+o(x^2)}\\
-&= e*[1 + (-\frac{x}{2}+\frac{x^2}{3}+o(x^2))+ \frac{(-\frac{x}{2}+\frac{x^2}{3}+o(x^2))^2}{2}+o(-\frac{x}{2}+\frac{x^2}{3}+o(x^2))]
+&= e*[1 + (-\frac{x}{2}+\frac{x^2}{3}+o(x^2))+ \frac{(-\frac{x}{2}+\frac{x^2}{3}+o(x^2))^2}{2}+o(-\frac{x}{2}+\frac{x^2}{3}+o(x^2))]\\
 \end{align}
 $$
