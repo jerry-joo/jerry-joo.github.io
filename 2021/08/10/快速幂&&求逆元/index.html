@@ -433,6 +433,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -446,7 +449,16 @@
 <p>​          <script type="math/tex">=(a)*(a*a)*(a*a*a*a)</script></p>
 <p>对b的二进制枚举来决定乘数的值</p>
 <p>代码：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">qmi</span><span class="params">(<span class="type">int</span> m, <span class="type">int</span> k, <span class="type">int</span> p)</span></span>&#123;<span class="comment">//m为底数 k为指数 p为module</span></span><br><span class="line">    <span class="type">int</span> res = <span class="number">1</span> % p, t = m;</span><br><span class="line">    <span class="keyword">while</span> (k)&#123; <span class="comment">//对k的二进制进行枚举</span></span><br><span class="line">        <span class="keyword">if</span> (k&amp;<span class="number">1</span>) res = res * t % p;  <span class="comment">//若为1则需要更新答案</span></span><br><span class="line">        t = t * t % p; <span class="comment">//每次乘数要平方</span></span><br><span class="line">        k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">qmi</span><span class="token punctuation">(</span><span class="token keyword">int</span> m<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">,</span> <span class="token keyword">int</span> p<span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token comment">//m为底数 k为指数 p为module</span>
+    <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">%</span> p<span class="token punctuation">,</span> t <span class="token operator">=</span> m<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">&#123;</span> <span class="token comment">//对k的二进制进行枚举</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>k<span class="token operator">&amp;</span><span class="token number">1</span><span class="token punctuation">)</span> res <span class="token operator">=</span> res <span class="token operator">*</span> t <span class="token operator">%</span> p<span class="token punctuation">;</span>  <span class="token comment">//若为1则需要更新答案</span>
+        t <span class="token operator">=</span> t <span class="token operator">*</span> t <span class="token operator">%</span> p<span class="token punctuation">;</span> <span class="token comment">//每次乘数要平方</span>
+        k <span class="token operator">>>=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>练习：Acwing 875 快速幂<br><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/877/">https://www.acwing.com/problem/content/877/</a></p>
 <h2 id="求逆元"><a href="#求逆元" class="headerlink" title="求逆元"></a>求逆元</h2><p>​         <script type="math/tex">f=\frac{a}{b}\pmod{p}</script>​​​​​​​​​ </p>
 <p>​     <script type="math/tex">∵ \frac{a}{b}\pmod{p}</script>​​​​​​​​​ 无法直接得出</p>
