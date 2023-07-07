@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="泰勒, zzy的BLOG">
+    <meta name="keywords" content="docker部署Jenkins, zzy的BLOG">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>泰勒 | zzy的BLOG</title>
+    <title>docker部署Jenkins | zzy的BLOG</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -266,12 +266,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">泰勒</h1>
+                    <h1 class="description center-align post-title">docker部署Jenkins</h1>
                 </div>
             </div>
         </div>
@@ -387,8 +387,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%85%AC%E5%BC%8F/">
-                                <span class="chip bg-color">公式</span>
+                            <a href="/tags/jenkins/">
+                                <span class="chip bg-color">jenkins</span>
                             </a>
                         
                     </div>
@@ -399,8 +399,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" class="post-category">
-                                高等数学
+                            <a href="/categories/docker/" class="post-category">
+                                docker
                             </a>
                         
                     </div>
@@ -412,14 +412,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-04-18
+                    2023-07-07
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-05-05
+                    2023-07-07
                 </div>
                 
 
@@ -438,30 +438,128 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>一些常用的公式<br><span id="more"></span><br>$e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}$</p>
-<p>$\sin(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!}$</p>
-<p>$\cos(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!}$</p>
-<p>$\tan(x) = \sum<em>{n=0}^{\infty} \frac{ (-4)^{n}(4^{n}-1) B</em>{2n}}{(2n)!} x^{2n+1}$</p>
-<p>$\ln(1+x) = \sum_{n=1}^{\infty} \frac{(-1)^{n-1} x^n}{n}$</p>
-<p>$\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n$</p>
-<p>$\frac{1}{1+x} = \sum_{n=0}^{\infty} (-1)^n x^n$</p>
-<p>$\arctan(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{2n+1}$</p>
-<p>泰勒展开</p>
-<p>在x-&gt; 0处</p>
-<p>$\sin(x) = x - \frac{x^3}{6} + \frac{x^5}{120} +o(x^5)$</p>
-<p>$\cos(x) = 1 - \frac{x^2}{2} + \frac{x^4}{24} +o(x^4)$</p>
-<p>$\ln(1+x) = x - \frac{x^2}{2} +\frac{x^3}{3} +o(x^3)$</p>
-<p>$e^x = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + o(x^3)$</p>
-<p>$(1+x)^{\frac{1}{x}} = e^\frac{\ln(1+x)}{x}$<br>$= e*[1 + (-\frac{x}{2}+\frac{x^2}{3}+o(x^2))+ \frac{(-\frac{x}{2}+\frac{x^2}{3}+o(x^2))^2}{2}+o(-\frac{x}{2}+\frac{x^2}{3}+o(x^2))]$ </p>
-<p>推导过程</p>
-<p><font color =red>注意各泰勒公式的活用 </font></p>
-<script type="math/tex; mode=display">
-\begin{align}
-(1+x)^{\frac{1}{x}} = e^\frac{\ln(1+x)}{x}
-& = e^\frac{x - \frac{x^2}{2} +\frac{x^3}{3} +o(x^3)}{x}= e^{1-\frac{x}{2}+\frac{x^2}{3}+o(x^2)}\\
-& = e*e^{-\frac{x}{2}+\frac{x^2}{3}+o(x^2)}\\
-&= e*[1 + (-\frac{x}{2}+\frac{x^2}{3}+o(x^2))+ \frac{(-\frac{x}{2}+\frac{x^2}{3}+o(x^2))^2}{2}+o(-\frac{x}{2}+\frac{x^2}{3}+o(x^2))]\\
-\end{align}</script>
+                <p>docker部署jenkins<br><span id="more"></span></p>
+<h2 id="一-在docker中安装jenkins"><a href="#一-在docker中安装jenkins" class="headerlink" title="一.在docker中安装jenkins"></a>一.在docker中安装jenkins</h2><p>本文以jenkins:2.60.3为例子</p>
+<h3 id="1-拉取jenkins镜像"><a href="#1-拉取jenkins镜像" class="headerlink" title="1.拉取jenkins镜像"></a>1.拉取jenkins镜像</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull jenkins/jenkins:2.60.3 </span><br></pre></td></tr></table></figure>
+<h3 id="2-运行jenkins容器"><a href="#2-运行jenkins容器" class="headerlink" title="2.运行jenkins容器"></a>2.运行jenkins容器</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -uroot -p 15200:8080 --name jenkins_test \</span><br><span class="line">-v /root/jenkins/jenkins_home:/var/jenkins_home \</span><br><span class="line">-v /root/mavenrepo:/root/mavenrepo \</span><br><span class="line">-v /usr/local/git:/usr/local/git \</span><br><span class="line">-v /usr/bin/docker:/usr/bin/docker \</span><br><span class="line">-v /var/run/docker.sock:/var/run/docker.sock \</span><br><span class="line">--net mynet \</span><br><span class="line"> jenkins/jenkins:2.60.3</span><br></pre></td></tr></table></figure>
+<p>说明：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-p 15200:8080</span><br><span class="line">````</span><br><span class="line">将容器内8080端口向外暴露，连接的外部端口为15200，即用户可以访问</span><br><span class="line">http://&lt;font color = &#x27;red&#x27;&gt;自己的服务器ip &lt;/font&gt;:15200 来访问jenkins,这些端口都是可以自定义的。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>-v /root/jenkins/jenkins_home:/var/jenkins_home<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">将jenkins_home挂载到本地服务器，可以直接修改本地文件同步修改容器内，不用进入容器</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>-v /root/mavenrepo:/root/mavenrepo<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">挂载maven仓库到本地，因为本文部署的项目为web端应用，涉及到java和vue，所以需要使用到maven和nodejs。</span><br><span class="line"></span><br><span class="line">在此处挂载maven仓库的目的是为了方便找到依赖文件，如果不设置，作者也不知道下载的依赖文件会去哪。</span><br><span class="line"></span><br><span class="line">本文使用jenkins配置maven的方法为&lt;font color = &#x27;red&#x27;&gt; 代理&lt;/font&gt;,即在jenkinsfile中设置代理镜像来达到maven打包的目的，这个方法好处是方便，不需要下载一个maven到jenkins容器中，只要提供一个配置文件即可，下文中会提到配置文件。后续nodejs也同理</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>-v /usr/local/git:/usr/local/git<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">与上面同意，将服务器的git直接挂载到jenkins容器中，免去安装git（这步的做法有待商榷，似乎jenkins自带git？）</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>-v /usr/bin/docker:/usr/bin/docker<br>-v /var/run/docker.sock:/var/run/docker.sock<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">将本地的docker环境直接映射到jenkins容器中，可以在jenkins容器中直接使用docker，&lt;font color=&quot;red&quot;&gt;注意&lt;/font&gt;此处的docker就是jenkins容器使用的docker,为后续打包完成后的部署提供巨大的便利。但是小心内存不够用！</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><br>—net mynet<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">接入自定义的docker网络，可省略。</span><br><span class="line"></span><br><span class="line">### 3.进入jenkins</span><br><span class="line"></span><br><span class="line">访问http://&lt;font color = &#x27;red&#x27;&gt;自己的服务器ip &lt;/font&gt;:15200 根据步骤初始化，中途会要求密码</span><br><span class="line"></span><br><span class="line">jenkins容器启动后会生成一个初始密码，在&lt;font color=&quot;red&quot;&gt;容器内&lt;/font&gt;/var/jenkins_home/scrects/ 目录下的initilAdminPassword 文件中</span><br><span class="line">可以直接进入容器加载到该目录查看</span><br><span class="line">&lt;font color=&quot;red&quot;&gt;或者&lt;/font&gt; 由于之前将容器的jenkins_home目录挂载到了本地/root/jenkins/jenkins_home/下，可以直接访问本地服务器的/root/jenkins/jenkins_home/scrects/来查看密码，感受到挂载数据卷的好处了吧！</span><br><span class="line"></span><br><span class="line">初始化时最好安装插件</span><br><span class="line"></span><br><span class="line">推荐安装</span><br><span class="line"></span><br><span class="line">1.blue Ocean</span><br><span class="line"></span><br><span class="line">更简洁的错误输出</span><br><span class="line"></span><br><span class="line">2.maven Integration *必装</span><br><span class="line"></span><br><span class="line">方便构建</span><br><span class="line"></span><br><span class="line">3.Docker Pipeline *必装</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">4.nodejs *必装</span><br><span class="line"></span><br><span class="line">前端构建运行npm指令需要</span><br><span class="line"></span><br><span class="line">5.pipline *必装</span><br><span class="line"></span><br><span class="line">流水线的插件</span><br><span class="line"></span><br><span class="line">6.ssh publish</span><br><span class="line"></span><br><span class="line">由于选择了docker部署，不需要用ssh传到服务器，可不装，再次提醒docker部署方法是直接在本机部署，注意内存消耗</span><br><span class="line"></span><br><span class="line">7.Localization Support Plugin  &amp;  Localization: Chinese (Simplified)</span><br><span class="line"></span><br><span class="line">汉化</span><br><span class="line"></span><br><span class="line">## 二.jenkins配置</span><br><span class="line"></span><br><span class="line">### 1.maven配置</span><br><span class="line"></span><br><span class="line">上面讲到了不需要安装maven，只需要提供一个maven的配置文件settings.xml</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>&lt;?xml version=”1.0” encoding=”UTF-8”?&gt;</p>
+<p><settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"><br>  <pluginGroups>
+  </pluginGroups><br>  <proxies>
+  </proxies><br>  <servers>
+  </servers><br>  <mirrors><br>    <mirror><br>        <id>nexus-aliyun</id><br>        <mirrorOf>central</mirrorOf><br>        <name>Nexus aliyun</name><br>        <url><a target="_blank" rel="noopener" href="http://maven.aliyun.com/nexus/content/groups/public">http://maven.aliyun.com/nexus/content/groups/public</a></url>
+    </mirror>
+  </mirrors></p>
+  <localRepository>/root/mavenrepo</localRepository>
+
+<p>  <profiles><br>    <profile><br>        <id>jdk-1.8</id><br>        <activation><br>            <jdk>1.8</jdk>
+        </activation><br>        <properties><br>            <maven.compiler.source>1.8&lt;/maven.compiler.source&gt;<br>            <maven.compiler.target>1.8&lt;/maven.compiler.target&gt;<br>            <maven.compiler.compilerVersion>1.8&lt;/maven.compiler.compilerVersion&gt;
+        </properties>
+    </profile>
+  </profiles><br>&lt;/settings&gt;<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">此配置文件采用了aliyun的镜像仓库</span><br><span class="line"></span><br><span class="line">本地的仓库设置，与上面挂载的地址一致，注意此处对应的是容器内的目录</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p><localRepository>/root/mavenrepo</localRepository><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">将此配置文件放到本地目录/root/jenkins/jenkins_home/&lt;font color=&quot;red&quot;&gt;appconfig/maven/&lt;/font&gt;setting.xml,红色部分可以修改，因为挂载了数据卷，也就是将此配置文件放在容器/var/jenkins_home/appconfig/maven/settings.xml</span><br><span class="line"></span><br><span class="line">完成此步可以在jenkins全局配置中配置maven pom的地址，要选择自定义路径。(不设置也没关系，jenkinsfile会出手，但是ali镜像必须设置，不然下载不到依赖)</span><br><span class="line"></span><br><span class="line">### 2.nodejs配置</span><br><span class="line"></span><br><span class="line">不需要jenkinsfile会出手。</span><br><span class="line"></span><br><span class="line">## 三.jenkinsfile编写</span><br><span class="line"></span><br><span class="line">### 1.java jenkinsfile</span><br></pre></td></tr></table></figure><br>pipeline{<br>    agent any</p>
+<pre><code>environment &#123;
+  WS = &quot;$&#123;WORKSPACE&#125;&quot;
+  IMAGE_NAME = &quot;auto-schedule-ui&quot; //自己应用的名字，下面可以引用
+&#125;
+
+//定义流水线的加工流程
+stages &#123;
+    //流水线的所有阶段
+    stage(&#39;1.环境检查&#39;)&#123;
+        steps &#123;
+           sh &#39;pwd &amp;&amp; ls -alh&#39;
+           sh &#39;printenv&#39;
+           sh &#39;docker version&#39;
+           sh &#39;java -version&#39;
+           sh &#39;git --version&#39;
+        &#125;
+    &#125;
+
+    stage(&#39;2.编译&#39;)&#123;
+
+        //本教程关键，利用docker镜像代理maven，同时指定仓库地址
+        agent &#123;
+            docker &#123;
+                image &#39;maven:3-alpine&#39;
+                args &#39;-v maven-repository:/root/mavenrepo&#39;
+             &#125;
+        &#125;
+
+        steps &#123;
+           sh &#39;pwd &amp;&amp; ls -alh&#39;
+           sh &#39;mvn -v&#39;
+           sh &#39;cd $&#123;WS&#125; &amp;&amp; mvn clean package -s &quot;/var/jenkins_home/appconfig/maven/settings.xml&quot; -Dmaven.test.skip=true&#39;
+        &#125;
+    &#125;
+
+    stage(&#39;3.打包&#39;)&#123;
+        steps &#123;
+           sh &#39;pwd &amp;&amp; ls -alh&#39;
+           sh &#39;echo $&#123;WS&#125;&#39;
+
+            //docker 的shell脚本，用Dockerfile来构建了docker镜像，dockerfile需要手动编写 $&#123;IMAGE_NAME&#125;在上面
+           sh &#39;docker build -t $&#123;IMAGE_NAME&#125; -f Dockerfile $&#123;WS&#125;/$&#123;IMAGE_NAME&#125;/target/&#39; 
+
+        &#125;
+    &#125;
+
+    stage(&#39;4.部署&#39;)&#123;
+
+        steps &#123;
+           sh &#39;pwd &amp;&amp; ls -alh&#39;
+           // 删除容器和虚悬镜像
+           sh &#39;docker rm -f $&#123;IMAGE_NAME&#125; || true &amp;&amp; docker rmi $(docker images -q -f dangling=true) || true&#39;
+           //docker创建容器 $&#123;IMAGE_NAME&#125;同上
+           sh &#39;docker run -d -p 8300:8300 --net mynet --name $&#123;IMAGE_NAME&#125; -v /mydata/logs/$&#123;IMAGE_NAME&#125;:/logs/$&#123;IMAGE_NAME&#125; $&#123;IMAGE_NAME&#125;&#39;
+        &#125;
+    &#125;
+&#125;
+</code></pre><p>}</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">此jenkinsfile可以作为模板</span><br><span class="line"></span><br><span class="line">个人理解jenkinsfile就是一个脚本文件，代替人类执行重复任务，但是编写shell时必须多加检查，做好备份（作者因为删除指令，就删库跑路过，只能重新开始）</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### 2.java Dockerfile</span><br></pre></td></tr></table></figure>
+<h1 id="FROM-java-8"><a href="#FROM-java-8" class="headerlink" title="FROM java:8"></a>FROM java:8</h1><p>FROM anapsix/alpine-java:8_server-jre_unlimited</p>
+<h1 id="将当前目录下的jar包复制到docker容器的-目录下"><a href="#将当前目录下的jar包复制到docker容器的-目录下" class="headerlink" title="将当前目录下的jar包复制到docker容器的/目录下"></a>将当前目录下的jar包复制到docker容器的/目录下</h1><p>COPY *.jar /app.jar</p>
+<h1 id="运行过程中创建一个xx-jar文件"><a href="#运行过程中创建一个xx-jar文件" class="headerlink" title="运行过程中创建一个xx.jar文件"></a>运行过程中创建一个xx.jar文件</h1><p>RUN touch /app.jar</p>
+<p>ENV TZ=Asia/Shanghai JAVA_OPTS=”-Xms128m -Xmx256m -Djava.security.egd=file:/dev/./urandom”<br>ENV PARAMS=”—spring.profiles.active=prod”</p>
+<h1 id="指定docker容器启动时运行jar包"><a href="#指定docker容器启动时运行jar包" class="headerlink" title="指定docker容器启动时运行jar包"></a>指定docker容器启动时运行jar包</h1><p>ENTRYPOINT [ “sh”, “-c”, “java $JAVA_OPTS -jar /app.jar $PARAMS” ]<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 3.npm jenkinsfile</span><br><span class="line">npm版,与上述类似替换stage即可</span><br></pre></td></tr></table></figure><br>stage(‘1.环境检查’){<br>            steps {<br>               sh ‘pwd &amp;&amp; ls -alh’<br>               sh ‘printenv’<br>               sh ‘docker version’<br>               sh ‘git —version’<br>            }<br>        }</p>
+<pre><code>    stage(&#39;2.编译&#39;)&#123;
+        agent &#123;
+            docker &#123;
+                image &#39;node:14.15.0-alpine&#39;
+             &#125;
+        &#125;
+        steps &#123;
+           sh &#39;pwd &amp;&amp; ls -alh&#39;
+           sh &#39;node -v&#39;
+           sh &#39;cd $&#123;WS&#125; &amp;&amp; npm install --registry=https://registry.npmmirror.com --no-fund &amp;&amp; npm run build&#39;
+        &#125;
+    &#125;
+
+    stage(&#39;3.打包&#39;)&#123;
+        steps &#123;
+           sh &#39;pwd &amp;&amp; ls -alh&#39;
+           sh &#39;docker build --build-arg PROFILE=$&#123;PROFILE&#125; -t $&#123;IMAGE_NAME&#125; .&#39;
+        &#125;
+    &#125;
+
+    stage(&#39;4.部署&#39;)&#123;
+        // 删除容器和虚悬镜像
+        steps &#123;
+           sh &#39;pwd &amp;&amp; ls -alh&#39;
+           sh &#39;docker rm -f $&#123;IMAGE_NAME&#125; || true &amp;&amp; docker rmi $(docker images -q -f dangling=true) || true&#39;
+           sh &#39;docker run -d -p 15195:80 --name $&#123;IMAGE_NAME&#125; --net mynet $&#123;IMAGE_NAME&#125;&#39;
+        &#125;
+    &#125;
+</code></pre><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">唯一注意点是，查看清楚项目package.json的构建指令是什么，再修改stage2中的构建脚本，比如package.json中build脚本为</span><br></pre></td></tr></table></figure>
+<p>“build-prod”: “vue-cli-service build”<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">则改动为(在结尾)</span><br></pre></td></tr></table></figure><br>sh ‘cd ${WS} &amp;&amp; npm install —registry=<a target="_blank" rel="noopener" href="https://registry.npmmirror.com">https://registry.npmmirror.com</a> —no-fund &amp;&amp; npm run build-prod’<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">### 4.npm Dockerfile(使用了nginx)</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>FROM nginx:alpine3.17</p>
+<h1 id="构建参数-在Jenkinsfile中构建镜像时定义"><a href="#构建参数-在Jenkinsfile中构建镜像时定义" class="headerlink" title="构建参数,在Jenkinsfile中构建镜像时定义"></a>构建参数,在Jenkinsfile中构建镜像时定义</h1><p>ARG PROFILE</p>
+<h1 id="将dist文件中的内容复制到-usr-share-nginx-html-这个目录下面"><a href="#将dist文件中的内容复制到-usr-share-nginx-html-这个目录下面" class="headerlink" title="将dist文件中的内容复制到 /usr/share/nginx/html/ 这个目录下面"></a>将dist文件中的内容复制到 <code>/usr/share/nginx/html/</code> 这个目录下面</h1><p>COPY dist/  /usr/share/nginx/html/</p>
+<h1 id="用本地配置文件来替换nginx镜像里的默认配置"><a href="#用本地配置文件来替换nginx镜像里的默认配置" class="headerlink" title="用本地配置文件来替换nginx镜像里的默认配置"></a>用本地配置文件来替换nginx镜像里的默认配置</h1><p>COPY nginx/nginx-${PROFILE}.conf /etc/nginx/nginx.conf</p>
+<h1 id="以前台形式持续运行"><a href="#以前台形式持续运行" class="headerlink" title="以前台形式持续运行"></a>以前台形式持续运行</h1><p>CMD [“nginx”, “-g”, “daemon off;”]<br>```<br>需要手动创建nginx的配置文件，例如此处从上面的jenkinsfile中得知PROFILE=prod，需要创建nginx/nginx-prod.conf文件夹及文件</p>
+
                 
             </div>
             <hr/>
@@ -487,7 +585,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://jerry-joo.github.io/2023/04/18/tylor/">http://jerry-joo.github.io/2023/04/18/tylor/</a>
+                    <a href="http://jerry-joo.github.io/2023/07/07/docker%E9%83%A8%E7%BD%B2jenkins/">http://jerry-joo.github.io/2023/07/07/docker%E9%83%A8%E7%BD%B2jenkins/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -525,8 +623,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%85%AC%E5%BC%8F/">
-                                    <span class="chip bg-color">公式</span>
+                                <a href="/tags/jenkins/">
+                                    <span class="chip bg-color">jenkins</span>
                                 </a>
                             
                         </div>
@@ -572,36 +670,50 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/07/07/maven/">
+                <a href="/2023/07/07/docker%E9%83%A8%E7%BD%B2jenkins/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="maven">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="docker部署Jenkins">
                         
-                        <span class="card-title">maven</span>
+                        <span class="card-title">docker部署Jenkins</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Maven
+                            docker部署jenkins
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-07
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            zzy
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/docker/" class="post-category">
+                                    docker
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/jenkins/">
+                        <span class="chip bg-color">jenkins</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -613,31 +725,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/08/12/%E6%9C%80%E7%9F%AD%E8%B7%AF/">
+                <a href="/2023/07/07/shiro/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="最短路">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="springboot shiro">
                         
-                        <span class="card-title">最短路</span>
+                        <span class="card-title">springboot shiro</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            多种方法求求短路
+                            Shiro安全框架
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
+                            <a href="/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
+                                    后端
                                 </a>
                             
                             
@@ -647,8 +759,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%9B%BE%E8%AE%BA/">
-                        <span class="chip bg-color">图论</span>
+                    <a href="/tags/%E6%A1%86%E6%9E%B6/">
+                        <span class="chip bg-color">框架</span>
                     </a>
                     
                 </div>
